@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// never forget this
+import { BrowserRouter as Router } from "react-router-dom"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* never forget this */}
+    <Router>
+
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
