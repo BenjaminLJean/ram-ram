@@ -1,19 +1,8 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import PreviousAttemps from "./PreviousAttemps";
-
-
+import NewPlayer from "./NewPlayer"
 
 
 export default function Home() {
-
-  const [avatar, setAvatar] = useState("");
-
-  function startGame() {
-    //change the page
-    //karmic system build it in chapter page
-    //
-  }
 
   return (
     <div>
@@ -21,9 +10,15 @@ export default function Home() {
         <h1>Welcome to RAM-RAM</h1>
         <h3>The Biased Adventure Game</h3>
       </div>
-      <PreviousAttemps />
-      <input type="text" value={avatar} onSubmit={setAvatar} />
-      <button onClick={startGame}><Link to="/chapterone">Play!</Link></button>
+      <div className="description">
+        <p>Here in RAM-RAM everything may not be what it seems like. This is a simple decision based app that
+          detemines your rank at the end of it.... if you make it that is...
+        </p>
+      </div>
+      <div className="scoreboard">
+        <PreviousAttemps />
+      </div>
+      <NewPlayer />
     </div>
   )
 }

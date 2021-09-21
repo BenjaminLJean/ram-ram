@@ -28,7 +28,13 @@ export default function PreviousAttemps() {
 
   return (
     <div>
+      <div className="scoreboard-heading"><h2>Here lies the hall of Fools</h2></div>
 
+
+      {players.map((player) => {
+        return <div key={player.id}>
+          <h4>{player.fields.name}</h4> {player.fields.rank} - {player.fields.status}</div>
+      })}
     </div>
   )
 }
