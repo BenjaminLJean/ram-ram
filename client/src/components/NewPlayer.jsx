@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 import axios from "axios";
 
 
@@ -22,7 +22,7 @@ export default function NewPlayer() {
   const [name, setName] = useState("");
   const [rank, setRank] = useState("Runt");
   const [status, setStatus] = useState("Alive")
-  const { id } = useParams();
+  // const { id } = useParams();
 
 
   const handleSubmit = async (e) => {
@@ -34,6 +34,8 @@ export default function NewPlayer() {
     }
     const res = await axios.post(URL, { fields }, config);
     console.log(res.data);
+    setStatus("Alive")
+    setRank("Runt")
   }
 
   // useEffect(() => {
