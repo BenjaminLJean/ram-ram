@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import { useParams } from "react-router";
 import axios from "axios";
+import { Route } from "react-router-dom";
+import { useParams } from "react-router";
+import { useHistory } from "react-router";
 
 
 
@@ -22,8 +24,8 @@ export default function NewPlayer() {
   const [name, setName] = useState("");
   const [rank, setRank] = useState("Runt");
   const [status, setStatus] = useState("Alive")
-  // const { id } = useParams();
-
+  const [id, setId] = useState("");
+  const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,22 +38,15 @@ export default function NewPlayer() {
     console.log(res.data);
     setStatus("Alive")
     setRank("Runt")
+    setId(res.data.id)
+    history.push(`/chapterone/${res.data.id}`);
   }
-
-  // useEffect(() => {
-  //   const setPlayer = async () => {
-  //     const res = await axios.post(`${URL}/${id}`, config);
-  //     setName(res.data.name);
-  //   }
-  //   setPlayer();
-  // }, [])
 
 
   return (
     <div>
-
       <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-      <button onClick={handleSubmit}><Link to="/chapterone/:id">Play!</Link></button>
+      <button onClick={handleSubmit}>Play!</button>
 
     </div>
   )
