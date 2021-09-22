@@ -20,19 +20,29 @@ export default function NewPlayer() {
 
 
   const [name, setName] = useState("");
+  const [rank, setRank] = useState("Runt");
+  const [status, setStatus] = useState("Alive")
   const { id } = useParams();
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const fields = {
+      name,
+      rank,
+      status,
+    }
+    const res = await axios.post(URL, { fields }, config);
+    console.log(res.data);
   }
 
-  useEffect(() => {
-    const setPlayer = async () => {
-      const res = await axios.post(`${URL}/${id}`, config);
-      setName(res.data.name);
-    }
-    setPlayer();
-  }, [])
+  // useEffect(() => {
+  //   const setPlayer = async () => {
+  //     const res = await axios.post(`${URL}/${id}`, config);
+  //     setName(res.data.name);
+  //   }
+  //   setPlayer();
+  // }, [])
 
 
   return (
