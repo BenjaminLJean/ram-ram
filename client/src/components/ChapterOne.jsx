@@ -122,7 +122,7 @@ export default function ChapterOne() {
       <div className="answerBox">
         {dialogue[currentScenario].decisions.map((decision) =>
           <button
-            onClick={() => switchScenes(decision.gChoice)}>{decision.answerTxt}
+            onClick={() => switchScenes(decision.gChoice, decision.deathButton)}>{decision.answerTxt}
           </button>)}
       </div>
     </div>
