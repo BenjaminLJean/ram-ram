@@ -62,7 +62,11 @@ export default function ChapterOne() {
   // }
 
 
-  const switchScenes = () => {
+  const switchScenes = (gChoice, deathButton) => {
+
+    gChoice === true ? setKCount(kCount + 1) : setKCount(kCount - 1)
+    deathButton === true ? alert("This the part where we change") : setKCount(kCount + 2)
+
     const nextScene = currentScenario + 1;
     nextScene < dialogue.length ? setCurrentScenario(nextScene) : alert("Chapter one is over!")
   }
@@ -78,8 +82,8 @@ export default function ChapterOne() {
     {
       scenarioText: `Well, if thats the case then be careful when going down the valley. Lots of rumors of people running into Explosive frogs! Sounds like a nasty predicament.`,
       decisions: [
-        { answerTxt: "Thanks", gChoice: true },
-        { answerTxt: "Go Awaaaaaay", deathButton: true },
+        { answerTxt: "Thanks", gChoice: false },
+        { answerTxt: "Go Awaaaaaay", gChoice: true },
       ]
     },
     {
@@ -118,15 +122,8 @@ export default function ChapterOne() {
       <div className="answerBox">
         {dialogue[currentScenario].decisions.map((decision) =>
           <button
-            onClick={switchScenes}>{decision.answerTxt}
+            onClick={() => switchScenes(decision.gChoice)}>{decision.answerTxt}
           </button>)}
-
-        {/* <button onClick={() => setKCount(kCount + 1)}>
-          Choice
-        </button>
-        <button onClick={deathButton}>
-          Death
-        </button> */}
       </div>
     </div>
   )

@@ -32,7 +32,7 @@ export default function NewPlayer() {
       status,
     }
     const res = await axios.post(URL, { fields }, config);
-    console.log(res.data);
+    // console.log(res.data);
     setStatus("Alive")
     setRank("Runt")
     setId(res.data.id)
