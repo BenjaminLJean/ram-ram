@@ -16,80 +16,6 @@ const config = {
 export default function ChapterOne() {
 
 
-  const dialogue = [
-    {
-      scenarioText: `Welcome traveler. What are you doing out over here in these dangerous times?`,
-      decisions: [
-        { answerTxt: "Nothing", gChoice: true },
-        { answerTxt: "Go Away", deathButton: true },
-      ]
-    },
-    {
-      scenarioText: `Welcome travelerrrrrrrrrr. What are you doing out over here in these dangerous times?`,
-      decisions: [
-        { answerTxt: "Nothingggggg", gChoice: true },
-        { answerTxt: "Go Awaaaaaay", deathButton: true },
-      ]
-    },
-    {
-      scenarioText: `Welcome traveler. What are you doing out over here in these dangerous times?`,
-      decisions: [
-        { answerTxt: "Nothing", gChoice: true },
-        { answerTxt: "Go Away", deathButton: true },
-      ]
-    },
-    {
-      scenarioText: `Welcome traveler. What are you doing out over here in these dangerous times?`,
-      decisions: [
-        { answerTxt: "Nothing", gChoice: true },
-        { answerTxt: "Go Away", deathButton: true },
-      ]
-    },
-    {
-      scenarioText: `Welcome traveler. What are you doing out over here in these dangerous times?`,
-      decisions: [
-        { answerTxt: "Nothing", gChoice: true },
-        { answerTxt: "Go Away", deathButton: true },
-      ]
-    },
-    {
-      scenarioText: `Welcome traveler. What are you doing out over here in these dangerous times?`,
-      decisions: [
-        { answerTxt: "Nothing", gChoice: true },
-        { answerTxt: "Go Away", deathButton: true },
-      ]
-    },
-    {
-      scenarioText: `Welcome traveler. What are you doing out over here in these dangerous times?`,
-      decisions: [
-        { answerTxt: "Nothing", gChoice: true },
-        { answerTxt: "Go Away", deathButton: true },
-      ]
-    },
-    {
-      scenarioText: `Welcome traveler. What are you doing out over here in these dangerous times?`,
-      decisions: [
-        { answerTxt: "Nothing", gChoice: true },
-        { answerTxt: "Go Away", deathButton: true },
-      ]
-    },
-    {
-      scenarioText: `Welcome traveler. What are you doing out over here in these dangerous times?`,
-      decisions: [
-        { answerTxt: "Nothing", gChoice: true },
-        { answerTxt: "Go Away", deathButton: true },
-      ]
-    },
-    {
-      scenarioText: `Welcome traveler. What are you doing out over here in these dangerous times?`,
-      decisions: [
-        { answerTxt: "Nothing", gChoice: true },
-        { answerTxt: "Go Away", deathButton: true },
-      ]
-    },
-  ];
-
-
   const deathButton = () => {
     console.log('dead');
     // setStatus("Dead")
@@ -119,11 +45,67 @@ export default function ChapterOne() {
     fetchPlayer();
   }, []);
 
+  // THIS IS TO UPDATE THE PLAYER INFO ONCE DONE. -work in progress-
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const fields = {
+  //     name,
+  //     rank,
+  //     status,
+  //   }
+  //   const res = await axios.put(URL, { fields }, config);
+  //   // console.log(res.data);
+  //   setStatus("Alive")
+  //   setRank("Runt")
+  //   setId(res.data.id)
+  //   history.push(`/chapterone/${res.data.id}`);
+  // }
+
 
   const switchScenes = () => {
     const nextScene = currentScenario + 1;
-    setCurrentScenario(nextScene);
+    nextScene < dialogue.length ? setCurrentScenario(nextScene) : alert("Chapter one is over!")
   }
+
+  const dialogue = [
+    {
+      scenarioText: `Welcome traveler. What are you doing out over here in these dangerous times?`,
+      decisions: [
+        { answerTxt: "Nothing", gChoice: true },
+        { answerTxt: "Go Away", deathButton: true },
+      ]
+    },
+    {
+      scenarioText: `Well, if thats the case then be careful when going down the valley. Lots of rumors of people running into Explosive frogs! Sounds like a nasty predicament.`,
+      decisions: [
+        { answerTxt: "Thanks", gChoice: true },
+        { answerTxt: "Go Awaaaaaay", deathButton: true },
+      ]
+    },
+    {
+      scenarioText: `~You see a frog hop onto the road about 100 feet away from you~`,
+      decisions: [
+        { answerTxt: "Turn around", gChoice: true },
+        { answerTxt: "Keep walking", deathButton: true },
+      ]
+    },
+    {
+      scenarioText: `~After a long walk, you stumble across the man that spoke to you earlier and thank him for the heads up. He offers you a ride to the nearby town he's heading to~`,
+      decisions: [
+        { answerTxt: "Ride with Him", gChoice: true },
+        { answerTxt: "Refuse the offer", deathButton: true },
+      ]
+    },
+    {
+      scenarioText: `~You get to the town and think about where your going to stay for the night. You see two options, The Tavern and The Loft...~ Hey there ${name}, where you'r staying?`,
+      decisions: [
+        { answerTxt: "The Tavern", gChoice: true },
+        { answerTxt: "The Loft", deathButton: true },
+      ]
+    },
+  ];
+
+
 
   return (
     <div>
