@@ -43,7 +43,7 @@ export default function NewPlayer() {
 
   return (
     <div>
-      <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Avatar Name" />
+      <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Avatar Name" className="input" />
       <button className="playbutton" onClick={handleSubmit}>Play!</button>
     </div>
   )
