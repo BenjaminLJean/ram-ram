@@ -37,14 +37,14 @@ export default function NewPlayer() {
     setRank("Runt")
     setId(res.data.id)
     history.push(`/chapterone/${res.data.id}`);
+    console.log(id);
   }
 
 
   return (
     <div>
-      <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-      <button onClick={handleSubmit}>Play!</button>
-
+      <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Avatar Name" />
+      <button className="playbutton" onClick={handleSubmit}>Play!</button>
     </div>
   )
 }

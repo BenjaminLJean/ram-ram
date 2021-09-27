@@ -1,0 +1,47 @@
+.body{
+  display: flex;
+  justify-content: center;
+}
+
+
+.screen{
+  justify-content: center;
+}
+
+
+.picture-container{
+justify-content: center;
+}
+
+.grasspic{
+  height: 40%;
+  width: 40%;
+  border-style: solid;
+  border-color: hotpink;
+}
+
+
+.scenarioText{
+  justify-content: center;
+  flex-wrap: wrap;
+  color: hotpink;
+  text-shadow: 1px 0 0 #8DE940, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  font-size: 2rem;
+  margin: 25px 25px 10px 25px;
+}
+
+
+.answerBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.answerButton{
+  color: #8DE940;
+  text-shadow: 1px 0 0 #8DE940, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 12px 12px 12px;
+  border-style: hidden;
+  background-color: transparent;
+}

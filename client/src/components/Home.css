@@ -1,0 +1,77 @@
+.body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playbutton{
+  background-color: limegreen;
+  color: hotpink;
+  box-shadow: -10px -5px -5px pink;
+}
+
+.Title{
+  font-weight: bold;
+  font-size: 2rem;
+  color: hotpink;
+  text-shadow: 2px 0 0 #8DE940, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.description{
+  justify-content: center;
+  font-weight: bold;
+  display: flex;
+}
+
+.description_text{
+  width: 50%;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-style: double;
+  border-color: limegreen;
+  border-radius: 20px;
+  border-width: thick;
+  color: hotpink;
+  text-shadow: 1px 0 0 #8DE940, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  font-size: 20px;
+}
+
+.scoreboard-container{
+  display: flex;
+  justify-content: center;
+  max-height: 200px;
+}
+
+.scoreboard{
+  width: 50%;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-style: ridge;
+  border-color: limegreen;
+  border-radius: 25px;
+  border-width: medium;
+  color: hotpink;
+  text-shadow: 1px 0 0 #8DE940, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  font-size: 16px;
+  max-height: max-content;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.inputArea{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.playbutton{
+  background-color: #8DE940;
+  border: none;
+  color: hotpink;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+}
