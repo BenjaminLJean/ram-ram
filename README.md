@@ -54,7 +54,6 @@ Airtable is returning the data for this base as follows:
 - Have the player assigned a rank at death or at completion of chapter
 - Have a post request once the player dies or completes a chapter
 - Chapter one must be complete
-- Have State within the dialogue
 
 
 #### PostMVP
@@ -64,6 +63,7 @@ Airtable is returning the data for this base as follows:
 - Have images in the background of the dialogue to set the mood.
 - Have a leaderboard page that shows a larger list of avatars.
 - Have a victory page
+- Have State within the dialogue
 
 ## Project Schedule
 
