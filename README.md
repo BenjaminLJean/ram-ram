@@ -11,18 +11,18 @@ RAM-RAM is a React and Airtable build that is decision based adventure game. At 
 The wireframe below basically shows how RAM-RAM would be viewed on both a desktop and mobile version. Being that it is a similar setup it should feel at home wherever you access it. 
 
 ![imageAlt](https://i.ibb.co/6Yvfs7k/Screen-Shot-2021-09-20-at-3-22-45-PM.png)
-![imageAlt](https://ibb.co/kG1KW88)
-![imageAlt](https://ibb.co/QfpSGWF)
-![imageAlt](https://ibb.co/XDB7WGc)
-![imageAlt](https://ibb.co/xhmR5tN)
+![imageAlt](https://i.ibb.co/p1cT3Jc/Screen-Shot-2021-09-20-at-3-18-56-PM.png)
+![imageAlt](https://i.ibb.co/hgfstWW/Screen-Shot-2021-09-20-at-3-20-35-PM.png)
+![imageAlt](https://i.ibb.co/c1kfdWc/Screen-Shot-2021-09-20-at-3-21-06-PM.png)
+![imageAlt](https://i.ibb.co/r3PxQXD/Screen-Shot-2021-09-20-at-3-21-49-PM.png)
 
 ## Component Hierarchy
 
-<!-- ![imageAlt](https://i.imgur.com/PhRA82l.png) -->
+![imageAlt](https://i.ibb.co/gF35FPT/Screen-Shot-2021-09-27-at-9-38-53-AM.png)
 
 ## API and Data Sample
 
-https://airtable.com/shrTv92TftYf4SVZZ
+https://airtable.com/shrj9uVFcL7qXRnbR
 
 Airtable is returning the data for this base as follows:
 
@@ -51,61 +51,62 @@ Airtable is returning the data for this base as follows:
 - Have functional dialogue that transitions after every choice selection.
 - Have certian scenarios that can prompt the current player to instant death.
 - Make sure death page has a button to return to home screen.
-- Create a karmic system that determines a players rank
+- Have the player assigned a rank at death or at completion of chapter
 - Have a post request once the player dies or completes a chapter
+- Chapter one must be complete
+- Have State within the dialogue
 
 
 #### PostMVP
 
-- Finish Chapters 2 and 3
+- Completion Chapters 2
+- Completion of Chapter 3
 - Have images in the background of the dialogue to set the mood.
 - Have a leaderboard page that shows a larger list of avatars.
+- Have a victory page
 
 ## Project Schedule
 
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
 | Sep 17-19 | Proposal Approval / Airtable Setup        | Complete |
-| Sep 20   | Component Creation / Home and Chapter Page | InComplete |
-| Sep 21   | Airtable recieving posts / Karmic system   | InComplete |
-| Sep 22   | CSS outline / MVP / Chapter 2 and 3        | InComplete |
-| Sep 23   | Background pictures / Leaderbaord page     | InComplete |
+| Sep 20   | Component Creation / Home and Chapter Page | Complete |
+| Sep 21   | Airtable recieving posts / Posting ranks   | Complete |
+| Sep 22   | CSS outline / MVP / Chapter 2 and 3        | Partial |
+| Sep 23   | Background pictures / Leaderbaord page     | Partial |
 | Sep 24   | Presentations                              | InComplete |
 
 ## Timeframes
 
-| Component                 | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                  |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Airtable setup            |    H     |     .5hrs      |      1hr      |     1hr     |
-| Clickable icons           |    H     |      1hrs      |      1hr      |     1hr     |
-| Data population pg 1      |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Data population pg 2      |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Data population pg 3      |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Form creation pg 1        |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Form creation pg 2        |    H     |      2hrs      |     1 hr      |    1 hr     |
-| Form creation pg 3        |    H     |      2hrs      |     1 hr      |     1hr     |
-| Data creation/update pg 1 |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Data creation/update pg 2 |    H     |      3hrs      |      1hr      |     1hr     |
-| Data creation/update pg 3 |    H     |      3hrs      |      1hr      |     1hr     |
-| Data deletion pg 1        |    H     |      2hrs      |      1hr      |     1hr     |
-| Data deletion pg 2        |    H     |      2hrs      |      1hr      |     1hr     |
-| Data deletion pg 3        |    H     |      2hrs      |      1hr      |     1hr     |
-| Component CSS pg 1        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Component CSS pg 2        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Component CSS pg 3        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Total                     |    H     |    42.5hrs     |     35hrs     |    35hrs    |
+| Component                 | Priority | Estimated Time | Time Invested |
+| ------------------------- | :------: | :------------: | :-----------: |
+| Proposal                  |    H     |      3hrs      |     2.5hrs      |
+| Airtable setup            |    H     |     .5hrs      |      1hr      |
+| Clickable icons           |    M     |      1hrs      |      1hr      |
+| Home Page     |    H     |      3hrs      |     3hrs      |
+| Chapter one page     |    H     |      3hrs      |     3hrs      |
+| Post request     |    H     |      2hrs      |     2.5hrs      |
+| Get request       |    H     |      1hr      |     1hr      |
+| Death Page    |    H     |      1.5hr      |     1 hr      |
+| Home page css     |    H     |      2hrs      |     2.5 hrs      |
+| Chapter one css |    H     |      3hrs      |     3hrs      |
+| Death Page css |    H     |      3hrs      |      1hr      |
+| Chapter 2 page |    L     |      3hrs      |      1hr      |
+| Chapter 2 css |    L     |      3hrs      |      0hr      |
+| Story development ch.1       |    H     |      3hrs      |      3hrs      |
+| Story development ch.2       |    H     |      3hrs      |      2hrs      |
+| Total                     |    H     |    35hrs     |     28.5hrs     |
 
 ## SWOT Analysis
 
 ### Strengths:
-
+My strenths would be having a solid idea of the functional layout of the website. I knew that i wanted this decision based game to be similar to something like a quiz in a way. That would help layout a system where i can call functions according to the specific decision the person makes.
 
 ### Weaknesses:
-
+My weaknesses is mostly css. Styling has not been my strong suit since i like to have very basic designs, but i do like to make them comfortbale. I will try to add more features and get comfortable with those so to me its still very normal but still something new at the same time.
 
 ### Opportunities:
-
+My opportunities would lie on the fact that the internet has an abundance of help, as well as my cohorts. Ill be able to solidify my knowledge as well as learn new things. I want to learn more things css wise and get more comfortable doing different designs. 
 
 ### Threats:
-
+Any threats would probably be using State i react and getting overwhelmed. But Ill make sure to break things down to avoid being overwhelmed. I'll also reach out in case i get stuck regarding the functionality of everything. 
