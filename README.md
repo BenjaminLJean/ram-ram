@@ -10,7 +10,7 @@ RAM-RAM is a React and Airtable build that is decision based adventure game. At 
 
 The wireframe below basically shows how RAM-RAM would be viewed on both a desktop and mobile version. Being that it is a similar setup it should feel at home wherever you access it. 
 
-![imageAlt](https://ibb.co/sgn4Fyn)
+![imageAlt](https://i.ibb.co/6Yvfs7k/Screen-Shot-2021-09-20-at-3-22-45-PM.png)
 ![imageAlt](https://ibb.co/kG1KW88)
 ![imageAlt](https://ibb.co/QfpSGWF)
 ![imageAlt](https://ibb.co/XDB7WGc)
